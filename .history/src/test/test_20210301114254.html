@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .user-dropdown {
+            width: 300px;
+            padding: 1em;
+            border-radius: 16px;
+            box-shadow: 0 0 8px  rgba(0,0,0,0.2);
+            border: 1px solid #ccc;
+        }
+
+        .links ul {
+            list-style-type: none;
+        }
+
+        .links ul li a {
+            display: block;
+            padding: 1em;
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .main {
+            display: none;
+        }
+
+        .profile {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn_user_dd">User</button>
+    <div class="user-dropdown" id="user-dd">
+        <div class="links main" id="main">
+            <ul>
+                <li>
+                    <a href="#">Profile</a>
+                    
+                </li>
+                <li>
+                    <a href="#">Link 1</a>
+                    
+                </li>
+                <li>
+                    <a href="#">Link 2</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="links profile" id="profile">
+            <ul>
+                <li><a href="#">Name</a></li>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./jquery.js"></script>
+    <script>
+        $("#btn_user_dd").on("click", function(){
+
+        });
+    </script>
+</body>
+</html>
