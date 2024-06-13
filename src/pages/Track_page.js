@@ -11,19 +11,21 @@ export class Track_page extends Component {
         this.state = {
             items: [],
             isLoaded: false,
-        }
+        }        
     }
 
     componentDidMount() {
 
-        fetch('https://cors-anywhere.herokuapp.com/https://myshipster.herokuapp.com/api/v1/myorder')
-            .then(res => res.json())
-            .then(json => {
-                this.setState({
+        fetch('https://dummyjson.com/posts')
+        .then(res => res.json())
+        .then(json => {
+            console.log(json); // Add this line
+            this.setState({
                 isLoaded: true,
                 items: json,
-                })
-           });
+            })
+        });
+    
     }
       render() {
        
@@ -43,14 +45,15 @@ export class Track_page extends Component {
                    <ul className="track_page_ul" >
                    <Row> 
                    {items.map(item => (
-                      <Col sm={12} lg={4} md={6}><li className='track_page_li'>  
-                           <li style={{marginLeft: '15px'}}><h5>ID:  {item._id}</h5></li> 
-                           <li style={{marginLeft: '15px'}}>PickUp Contact:  {item.pickUpContact}</li> 
-                           <li style={{marginLeft: '15px'}}>PickUp Name:  {item.pickUpName} </li><br></br>
+                    <Col sm={12} lg={4} md={6}>
+                        <li className='track_page_li'>  
+                           <li style={{marginLeft: '15px'}}><h5>ID:  {item.id}</h5></li> 
+                           <li style={{marginLeft: '15px'}}>Title:  {item.title}</li> 
+                           <li style={{marginLeft: '15px'}}>Body:  {item.body} </li><br></br>
                            
                            <Button href="/pages/OrderSummary"  style={{backgroundColor:'white' , color:'#0660A5', width: '145px', marginLeft: '90px'}} >More Details</Button>
-                       </li>
-                       </Col>
+                        </li>
+                    </Col>
                    ))}
                </Row>
                </ul>

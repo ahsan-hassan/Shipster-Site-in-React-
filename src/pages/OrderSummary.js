@@ -31,7 +31,7 @@ export class OrderSummary extends Component {
                     </Form.Group>
                     
 
-                    <Form.Group controlId="formBasicCheckbox" className="form_group" className="fragile">
+                    <Form.Group controlId="formBasicCheckbox" className="form_group fragile">
                         <Form.Check type="checkbox" label="Fragile" />
                         <Form.Text style={{marginLeft: '5px'}}>(check if it requires special care)</Form.Text>
                     </Form.Group>
