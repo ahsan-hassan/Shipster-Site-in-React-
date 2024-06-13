@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import {Form, Button , Col , Row } from 'react-bootstrap';
 import Rangeslider from '../components/Rangeslider';
-import styled from 'styled-components';
-
-const Styles= styled.div;
 
 export class OrderSummary extends Component {
     render() {

@@ -8,8 +8,8 @@ export class Signup extends Component {
         return (
             <div>
                 <Row>
-                    <Col className="lgnImage" className="d-none d-lg-block" lg={5}>
-                        <img src={illustration} className="loginImage" />
+                    <Col className="lgnImage d-none d-lg-block" lg={5}>
+                        <img src={illustration} className="loginImage" alt='Login'/>
                     </Col>
                     <Col lg={6}>
                     <SignupForm /> 
