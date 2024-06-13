@@ -29,6 +29,7 @@ const TrackPage = () => {
                                     <li className='track_page_li'>
                                         <li style={{ marginLeft: '15px' }}><h5>ID: {item.id}</h5></li>
                                         <li style={{ marginLeft: '15px' }}>Movie: {item.movie}</li>
+                                        <li style={{ marginLeft: '15px' }}>Rating: {item.rating}</li>
                                         <Button href="/pages/OrderSummary" style={{ backgroundColor: 'white', color: '#0660A5', width: '145px', marginLeft: '90px' }}>More Details</Button>
                                     </li>
                                 </Col>
